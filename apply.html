@@ -17,7 +17,7 @@
 
 <header class="site-header">
 <a href="index.html" class="site-logo">
-<svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="10" fill="#1F5C5A"/><path d="M9 18 L18 10 L27 18 M12 17v9h12v-9" fill="none" stroke="#FBF6EC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="10" fill="#F9AB00"/><path d="M9 18 L18 10 L27 18 M12 17v9h12v-9" fill="none" stroke="#222222" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
 <span class="site-logo__name">Firm Ground Homes</span>
 </a>
 <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -80,19 +80,19 @@
 <h2 class="subsection-title">What to bring to the interview</h2>
 <ul class="checklist">
 <li class="checklist__item">
-<svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" class="icon--check"><circle cx="14" cy="14" r="13" fill="#E3EEEA" stroke="#1F5C5A" stroke-width="2"/><path d="M8 14.5l4 4 8-9" fill="none" stroke="#1F5C5A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" class="icon--check"><circle cx="14" cy="14" r="13" fill="#F1E1E7" stroke="#B5275B" stroke-width="2"/><path d="M8 14.5l4 4 8-9" fill="none" stroke="#B5275B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
 <span>Photo ID</span>
 </li>
 <li class="checklist__item">
-<svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" class="icon--check"><circle cx="14" cy="14" r="13" fill="#E3EEEA" stroke="#1F5C5A" stroke-width="2"/><path d="M8 14.5l4 4 8-9" fill="none" stroke="#1F5C5A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" class="icon--check"><circle cx="14" cy="14" r="13" fill="#F1E1E7" stroke="#B5275B" stroke-width="2"/><path d="M8 14.5l4 4 8-9" fill="none" stroke="#B5275B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
 <span>Proof of income, a job offer letter, or a list of your job search steps</span>
 </li>
 <li class="checklist__item">
-<svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" class="icon--check"><circle cx="14" cy="14" r="13" fill="#E3EEEA" stroke="#1F5C5A" stroke-width="2"/><path d="M8 14.5l4 4 8-9" fill="none" stroke="#1F5C5A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" class="icon--check"><circle cx="14" cy="14" r="13" fill="#F1E1E7" stroke="#B5275B" stroke-width="2"/><path d="M8 14.5l4 4 8-9" fill="none" stroke="#B5275B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
 <span>A referral letter, if someone referred you (optional)</span>
 </li>
 <li class="checklist__item--flush">
-<svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" class="icon--check"><circle cx="14" cy="14" r="13" fill="#E3EEEA" stroke="#1F5C5A" stroke-width="2"/><path d="M8 14.5l4 4 8-9" fill="none" stroke="#1F5C5A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" class="icon--check"><circle cx="14" cy="14" r="13" fill="#F1E1E7" stroke="#B5275B" stroke-width="2"/><path d="M8 14.5l4 4 8-9" fill="none" stroke="#B5275B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
 <span>One emergency contact</span>
 </li>
 </ul>
@@ -105,7 +105,7 @@
 
 <sc-if value="{{ showConfirm }}" hint-placeholder-val="{{ false }}">
 <div role="status" class="confirmation-panel">
-<svg width="40" height="40" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="13" fill="#1F5C5A"/><path d="M8 14.5l4 4 8-9" fill="none" stroke="#FBF6EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<svg width="40" height="40" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="13" fill="#B5275B"/><path d="M8 14.5l4 4 8-9" fill="none" stroke="#FFF8F0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
 <p class="confirmation-panel__message">Thank you, {{ confirmName }}. We received your application. Expect a call within 3 business days from (555) 010-0142. (Sample number.)</p>
 <button type="button" onClick="{{ reset }}" class="button button--outline button--small">Reset the sample form</button>
 </div>
@@ -218,8 +218,8 @@ const nameError = s.tried && !s.firstName.trim();
 const phoneError = s.tried && !phoneOk;
 const workError = s.tried && !s.work;
 const consentError = s.tried && !s.consent;
-const ok = '#8F8575';
-const bad = '#A8481F';
+const ok = '#7A666F';
+const bad = '#B5275B';
 return {
 firstName: s.firstName,
 phone: s.phone,
